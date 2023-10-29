@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/android_logo_text" />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Welcome_Alert"/>
+
+    <TextView
+        android:id="@+id/tvAlas"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/instruksi_alas" />
+
+    <EditText
+        android:id="@+id/editAlas"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="52dp"
+        android:hint="@string/instruksi_tinggi"
+        android:ems="10"
+        android:inputType="number"
+        android:autofillHints=""
+        android:text="@string/isi_alas_1" />
+
+    <TextView
+        android:id="@+id/tvTinggi"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/instruksi_tinggi" />
+
+    <EditText
+        android:id="@+id/editTinggi"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="52dp"
+        android:hint="@string/instruksi_tinggi"
+        android:ems="10"
+        android:inputType="number"
+        android:autofillHints=""
+        android:text="@string/isi_tinggi" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/label_button" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hasil_luas" />
+
+
+</LinearLayout>
