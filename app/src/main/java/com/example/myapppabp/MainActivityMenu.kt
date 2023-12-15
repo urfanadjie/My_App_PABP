@@ -20,9 +20,9 @@ import kotlin.system.exitProcess
 
 class MainActivityMenu : AppCompatActivity() {
 
-    //Deklarasi val untuk channel id notification kotlin
-//    private val CHANNEL_ID = "channel_id_example_01"
-//    private val notificationId = 101
+    //Deklarasi val untuk notificationmanager
+    private lateinit var notificationmanager : NotificationManagerCompat
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
@@ -59,14 +59,42 @@ class MainActivityMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Kode untuk notfikasi dan deklarasi class createnotification
+        //Kode membuat notifikasi di class baseapplication
+        //inisialisasi notifikasi
+        notificationmanager = NotificationManagerCompat.from(this)
+
+        //val untuk kirim notifikasi bundle edittitle, editmessage
         val btnPert8 = findViewById<Button>(R.id.btn_pert8)
-
-        //jalankan fungsi notifikasi
-//        createNotificationChannel()
-
+        val editTitle = "Ini adalah Judul dari notifikasi"
+        val editMessage = "Ini adalah pesan dari notifikasi"
         btnPert8.setOnClickListener {
-//            sendNotification()
+            //ini uncomment apabila ada edittext di view tersendiri
+//          val title = editTitle.text.toString()
+//          val message = editMessage.text.toString()
+
+            //memanggil notifikasi builder (company objek)
+            val builder = NotificationCompat.Builder(this, BaseApplication.CHANNEL_1_ID)
+
+            //membuat icon dan set pengaturan notifikasi
+                .setSmallIcon(R.drawable.person_icon)
+                .setContentTitle(editTitle)
+                .setContentText(editMessage)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_MESSAGE) //kategori
+
+            //membuat notifikasi untuk di builder
+            val notifikasi = builder.build()
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.POST_NOTIFICATIONS
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    ActivityCompat.requestPermissions(this, (arrayOf(Manifest.permission.POST_NOTIFICATIONS)), 0)
+                }
+            }
+            this.notificationmanager.notify(1, notifikasi)
+
         }
 
         val btnExit = findViewById<Button>(R.id.btn_exit)
@@ -76,26 +104,4 @@ class MainActivityMenu : AppCompatActivity() {
             exitProcess(0)
         }
     }
-
-//    private fun createNotificationChannel() {
-//        val name = "Notification Title"
-//        val descriptionText = "Notification Description"
-//        val importance = NotificationManager.IMPORTANCE_DEFAULT
-//        val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
-//            description = descriptionText
-//        }
-//        val notificationManager: NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-//        notificationManager.createNotificationChannel(channel)
-//
-//    }
-//    private fun sendNotification() {
-//        val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-//            .setSmallIcon(R.drawable.ic_launcher_background)
-//            .setContentTitle("Example Title")
-//            .setContentText("Example Description")
-//            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-//
-////        with(NotificationManagerCompat.from(this)) {
-////            notify(notificationId, builder.build())
-//        }
-    }
+}
