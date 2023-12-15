@@ -67,6 +67,14 @@
             android:text="@string/tv_pertemuan05" />
 
         <Button
+            android:id="@+id/btn_pert8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/tv_pert8" />
+
+        <Button
             android:id="@+id/btn_exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

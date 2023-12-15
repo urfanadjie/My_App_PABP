@@ -78,4 +78,6 @@
     <string name="nama_lengkap_urfan">Muhammad Urfan Adjie Pratama</string>
     <string name="tv_hubungi_saya">Terhubung saya melalui</string>
     <string name="welcome_string">Halo, silahkan masuk!.</string>
+    <string name="splashscreenmessage">ini adalah gambar splash screen</string>
+    <string name="tv_pert8">Kirim Notifikasi (Pert. 8)</string>
 </resources>
