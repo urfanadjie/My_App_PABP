@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">My App PABP</string>
+    <string name="app_name">PABPAssignment</string>
+
+    <!--    ini adalah value untuk tampil description dan label    -->
     <string name="Welcome_Alert">Hello Dunia!.</string>
     <string name="label_button">Submit disini</string>
     <string name="content_description">Ini adalah sebuah foto Android terkini</string>
@@ -77,7 +79,11 @@
     <string name="nim_urfan">5200411194</string>
     <string name="nama_lengkap_urfan">Muhammad Urfan Adjie Pratama</string>
     <string name="tv_hubungi_saya">Terhubung saya melalui</string>
-    <string name="welcome_string">Halo, silahkan masuk!.</string>
+    <string name="welcome_string">Halo, boleh saya mengenalmu!.</string>
     <string name="splashscreenmessage">ini adalah gambar splash screen</string>
     <string name="tv_pert8">Kirim Notifikasi (Pert. 8)</string>
+    <string name="desc_alert">Masukkan Namamu dan buat password ya!.</string>
+    <string name="alert_halo_str">Halo,</string>
+    <string name="biar_lupa_passwordnya">Biar kamu engga lupa passwordnya!.</string>
+    <string name="lanjutkan">Lanjutkan</string>
 </resources>

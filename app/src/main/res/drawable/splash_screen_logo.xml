@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="250"
+    android:viewportHeight="250">
+  <group
+      android:name="splashScreenLogoAnimationGroup"
+      android:pivotX="1750"
+      android:pivotY="1750" >
+    <path
+        android:pathData="M164.5,124.5m-63.5,0a63.5,63.5 0,1 1,127 0a63.5,63.5 0,1 1,-127 0"
+        android:fillColor="#00C9BD"/>
+    <path
+        android:pathData="M83.5,124.5m-63.5,0a63.5,63.5 0,1 1,127 0a63.5,63.5 0,1 1,-127 0"
+        android:fillColor="#3A9EBD"/>
+  </group>
+</vector>

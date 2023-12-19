@@ -53,22 +53,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonIG3 = findViewById<Button>(R.id.button2)
-        buttonIG3.setOnClickListener{
-            Toast.makeText(this@MainActivity, "Success", Toast.LENGTH_SHORT).show()
-
-            val webURL = "https://www.instagram.com/"
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(webURL))
-            startActivity(intent)
-        }
-
-        val buttonPhone3 = findViewById<Button>(R.id.button3)
-        buttonPhone3.setOnClickListener{
-            Toast.makeText(this@MainActivity, "Success", Toast.LENGTH_SHORT).show()
-
-            val phonenumber = "085155334028"
-            val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phonenumber"))
-            startActivity(intent)
-        }
+        // ini utk kode tombol IG dan nomor telepon
+//        val buttonIG3 = findViewById<Button>(R.id.button2)
+//        buttonIG3.setOnClickListener{
+//            Toast.makeText(this@MainActivity, "Success", Toast.LENGTH_SHORT).show()
+//
+//            val webURL = "https://www.instagram.com/"
+//            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(webURL))
+//            startActivity(intent)
+//        }
+//
+//        val buttonPhone3 = findViewById<Button>(R.id.button3)
+//        buttonPhone3.setOnClickListener{
+//            Toast.makeText(this@MainActivity, "Success", Toast.LENGTH_SHORT).show()
+//
+//            val phonenumber = "085155334028"
+//            val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phonenumber"))
+//            startActivity(intent)
+//        }
     }
 }
