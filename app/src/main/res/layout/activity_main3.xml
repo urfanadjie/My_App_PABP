@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_desc_password" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_lanjut_ke_notif"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:text="@string/lanjutkan"

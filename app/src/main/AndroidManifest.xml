@@ -9,28 +9,30 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/animated_logo_splash_screen"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.MyAppPABP"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity4"
-            android:exported="false"
-            android:label="AnimatedSplashScreen"
-            android:theme="@style/Theme.App.Starting" >
-        </activity>
+            android:name=".MainActivityMessageNotification"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityNotification"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".MainActivity4" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="AnimatedSplashScreen" -->
+        <!-- android:theme="@style/Theme.App.Starting"></activity> -->
         <activity
             android:name=".MainSplashScreen"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MainActivity4ProfilSaya"

@@ -1,13 +1,15 @@
 package com.example.myapppabp
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
-@Suppress("DEPRECATION", "DEPRECATION")
+@Suppress("DEPRECATION")
 class MainActivity3 : AppCompatActivity() {
-    @SuppressLint("SetTextI8n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -50,13 +52,21 @@ class MainActivity3 : AppCompatActivity() {
         val userData = intent.getParcelableExtra<MainActivity3UserData>(/* name = */ "USER_DATA")
 
         if (userData != null) {
-            //DefinisI view dgn parcelable
+            //Definisi view dgn parcelable
             val textViewUser = findViewById<TextView>(R.id.tv_username)
             val textViewPassword = findViewById<TextView>(R.id.tv_password)
 
             //Tampil data ke tv layout dr parcelable
             textViewUser.text = "${userData.username}"
             textViewPassword.text = "${userData.password}"
+        }
+
+        val buttonLanjutNotifikasi = findViewById<Button>(R.id.btn_lanjut_ke_notif)
+        buttonLanjutNotifikasi.setOnClickListener{
+            Toast.makeText(this@MainActivity3, "Suwun!.", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, MainActivityNotification::class.java)
+            startActivity(intent)
         }
     }
 }

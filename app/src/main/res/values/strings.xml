@@ -86,4 +86,16 @@
     <string name="alert_halo_str">Halo,</string>
     <string name="biar_lupa_passwordnya">Biar kamu engga lupa passwordnya!.</string>
     <string name="lanjutkan">Lanjutkan</string>
+    <string name="punten_minta_izin_ya_sepuh">Punten, minta izin ya, Sepuh!.</string>
+    <string name="makasih_puh">Makasih puh!.</string>
+    <string name="test_kriuk">Test Kriuk</string>
+    <string name="kirim_pesan_ke_notifikasi">Kirim Pesan ke Notifikasi</string>
+    <string name="kirim_pesan">Kirim Pesan</string>
+    <string name="tulis_judul_kategori_1">Tulis Judul Kategori 1</string>
+    <string name="kirim_pesan_kategori_1">Kirim Pesan Kategori 1</string>
+    <string name="tulis_judul_kategori_2">Tulis Judul Kategori 2</string>
+    <string name="tulis_pesan_kategori_2">Tulis Pesan Kategori 2</string>
+    <string name="atau_mau_coba_untuk_kategori_2_juga">Atau mau coba untuk kategori 2 juga!.</string>
+    <string name="setelah_izin_kamu_bisa_kirim_pesan_ke_notifikasi_kamu_lho">Setelah izin, kamu bisa kirim pesan ke Notifikasi kamu lho!.</string>
+    <string name="test_kriuk_2">Klik Test Kriuk untuk izin Notifikasi. Lanjutkan jika sudah.</string>
 </resources>

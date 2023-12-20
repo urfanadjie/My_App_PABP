@@ -20,18 +20,18 @@ class BaseApplication : Application() {
         //Membuat notifikasi channel 1
         val channel1 = NotificationChannel(
             CHANNEL_1_ID,
-            "Channel Satu",
+            "Kategori Satu",
             NotificationManager.IMPORTANCE_HIGH
         )
-        channel1.description = "Ini adalah channel 1"
+        channel1.description = "Ini adalah Kategori 1"
 
         //membuat notifikasi channel 2
         val channel2 = NotificationChannel (
             CHANNEL_2_ID,
-            "Channel Dua",
-            NotificationManager.IMPORTANCE_LOW
+            "Kategori Dua",
+            NotificationManager.IMPORTANCE_HIGH
         )
-        channel2.description = "Ini adalah channel 2"
+        channel2.description = "Ini adalah Kategori 2"
 
         //membuat manager
         val manager = getSystemService(NotificationManager::class.java)
