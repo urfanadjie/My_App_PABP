@@ -1,6 +1,7 @@
 package com.example.myapppabp
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -92,10 +93,11 @@ class MainActivityMessageNotification : AppCompatActivity() {
             this.notificationmanager.notify(1, notifikasi)
         }
 
-        //Intent utk lanjut ke alarm notification
-//        val btnLanjutAlarmNotification = findViewById<Button>(R.id.btn_lanjut_message_notif)\
-//        btnLanjutAlarmNotification.setOnClickListener{
-//            val intent = Intent()
-//        }
+        // Intent utk lanjut ke alarm notification
+        val btnLanjutAlarmNotification = findViewById<Button>(R.id.btn_lanjut_message_notif)
+        btnLanjutAlarmNotification.setOnClickListener{
+            val intent = Intent(this, MainActivityAlarmManager::class.java)
+            startActivity(intent)
+        }
     }
 }

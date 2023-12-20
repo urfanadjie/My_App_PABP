@@ -98,4 +98,12 @@
     <string name="atau_mau_coba_untuk_kategori_2_juga">Atau mau coba untuk kategori 2 juga!.</string>
     <string name="setelah_izin_kamu_bisa_kirim_pesan_ke_notifikasi_kamu_lho">Setelah izin, kamu bisa kirim pesan ke Notifikasi kamu lho!.</string>
     <string name="test_kriuk_2">Klik Test Kriuk untuk izin Notifikasi. Lanjutkan jika sudah.</string>
+    <string name="ingatkan_saya">Ingatkan saya!!.</string>
+    <string name="ingatkan_saya_desc">Lihat waktu diatas, menunjukan waktu sekarang. Ingatkan saya dalam waktu yang kamu tentukan</string>
+    <string name="ingatkan_saya_pada">Ingatkan saya pada :</string>
+    <string name="pilih_waktu">Pilih Waktu</string>
+    <string name="sudah_pilih_atur_waktu">Sudah pilih?, Atur Waktu!.</string>
+    <string name="batalkan_alarm">Batalkan Alarm</string>
+    <string name="TimeExample">12 : 45</string>
+    <string name="hello_world">Hello World!</string>
 </resources>
