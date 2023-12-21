@@ -15,12 +15,12 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
 class AlarmReceiver : BroadcastReceiver() {
-    @SuppressLint("UnspecifiedImmutableFlag")
+
     override fun onReceive(context: Context?, intent: Intent?) {
 
         val i = Intent(context, MainActivityTerimaAlarm::class.java)
         intent!!.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        val pendingIntent = PendingIntent.getActivity(context, 0, i, 0)
+        val pendingIntent = PendingIntent.getActivity(context, 0, i, PendingIntent.FLAG_IMMUTABLE)
 
         val builder = NotificationCompat.Builder(context!!, "channel2")
             .setSmallIcon(R.drawable.baseline_message_24)
@@ -31,6 +31,7 @@ class AlarmReceiver : BroadcastReceiver() {
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(pendingIntent)
 
+        //Permission Check
         val notificationManager = NotificationManagerCompat.from(context)
         if (ActivityCompat.checkSelfPermission(
                 context,

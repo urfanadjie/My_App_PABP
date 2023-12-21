@@ -61,7 +61,7 @@
             android:text="@string/ingatkan_saya_pada" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/waktu_ditentukan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/TimeExample"
