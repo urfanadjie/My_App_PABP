@@ -30,6 +30,7 @@ class AlarmReceiver : BroadcastReceiver() {
             .setDefaults(NotificationCompat.DEFAULT_ALL)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(pendingIntent)
+            .addAction(R.drawable.baseline_add_alert_24, "Baiklah!.", pendingIntent)
 
         //Permission Check
         val notificationManager = NotificationManagerCompat.from(context)
