@@ -1,14 +1,9 @@
 package com.example.myapppabp
 
 import android.Manifest
-import android.annotation.SuppressLint
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
-import android.os.Build.VERSION_CODES.O
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -95,6 +90,12 @@ class MainActivityMenu : AppCompatActivity() {
             }
             this.notificationmanager.notify(1, notifikasi)
 
+        }
+
+        val buttonAPI = findViewById<Button>(R.id.btn_get_api)
+        buttonAPI.setOnClickListener {
+            val intent = Intent(this, MainApi::class.java)
+            startActivity(intent)
         }
 
         val btnExit = findViewById<Button>(R.id.btn_exit)

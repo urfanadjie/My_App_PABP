@@ -110,4 +110,5 @@
     <string name="species_string">species</string>
     <string name="human_string">Human</string>
     <string name="alive_string">alive</string>
+    <string name="get_api_btn_desc">Praktik 11 - Get API</string>
 </resources>
